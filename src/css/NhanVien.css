@@ -1,0 +1,39 @@
+.table-container {
+    width: 100%;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #3b5998;
+    color: white;
+}
+
+.employee-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.status-online {
+    color: green;
+    font-weight: bold;
+}
+
+.status-offline {
+    color: red;
+    font-weight: bold;
+}

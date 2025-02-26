@@ -1,0 +1,151 @@
+/* Định dạng chung */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Chia layout chính */
+.Login {
+  display: flex;
+  height: 100vh; /* Chiều cao toàn màn hình */
+}
+
+/* Sidebar (bên trái) */
+.sidebar-container {
+  width: 40%;
+  background-color: #f4c842; /* Màu vàng */
+  color: white;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Tiêu đề WELCOME */
+.sidebar-title {
+  font-size: 100px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Italianno", serif
+}
+
+/* Phần danh mục */
+.description {
+  font-size: 40px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Ảnh vận chuyển & thanh toán */
+.img-driver img,
+.img-pay img {
+  width: 180px;
+  height: 140px;
+  margin: 10px;
+}
+
+/* Phần footer */
+.region,
+.policy {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+/* Form đăng nhập (bên phải) */
+.form-sign {
+  width: 60%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Tiêu đề đăng nhập */
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f4c842;
+  margin-bottom: 20px;
+}
+
+/* Input field */
+.input-container {
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #f4c842;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: #f8dedd; /* Màu hồng nhạt */
+  outline: none;
+}
+
+input:focus {
+  border-color: #d4a71e;
+}
+
+
+/* Button */
+.submit-button {
+  background-color: #f4c842;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #d4a71e;
+}
+
+/* Link đăng ký */
+.signup-link {
+  margin-top: 15px;
+}
+
+.title-signup {
+  color: #f4c842;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.title-signup:hover {
+  text-decoration: underline;
+}
+.name-web{
+  font-size: 100px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Italianno", serif;
+  color: #f4c842;
+}
+.submit{
+  background-color: #f4c842; /* Màu vàng */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.submit:hover{
+  background-color: #d4a71e;
+}
