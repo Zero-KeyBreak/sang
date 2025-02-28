@@ -55,11 +55,7 @@ const customTheme = {
 };
 
 const items: CustomMenuItem[] = [
-  {
-    key: "",
-    label: "",
-    icon: <Logo />,
-  },
+ 
   {
     key: "item01",
     label: "Quản lý sản phẩm",
@@ -151,12 +147,12 @@ class App extends Component<Props, State> {
     return this.state.isLoggedIn ? (
       <ConfigProvider theme={customTheme}>
         <Layout style={layoutStyle}>
-          <Sider width={236} style={{ background: "#f6d7d7" }}>
-            <div className="demo-logo-vertical" />
-            <Menu mode="inline" defaultSelectedKeys={["item01"]}>
-              {this.renderMenuItems(items)}
-            </Menu>
-          </Sider>
+        <Sider width={236} style={{ background: "#f6d7d7" }}>
+        <Logo /> {/* Hiển thị logo trên sidebar */}
+        <Menu mode="inline" defaultSelectedKeys={["item01"]}>
+        {this.renderMenuItems(items)}
+        </Menu>
+        </Sider>
           <Layout>
             <Header style={headerStyle}>
               <Out />

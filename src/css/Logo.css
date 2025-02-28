@@ -1,15 +1,24 @@
-*{
-    padding:0px;
-    margin:0px;
-    box-sizing:border-box;
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Đảm bảo logo không bị co */
+  padding: 10px;
+  background: #f6d7d7; /* Giữ màu nền khi nhấn */
 }
-img{
-   width: 70px;
-    height: 70px;
+
+.logo-img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
 }
-.logo-img{
-    
-    margin-left: 35px;
-   margin-bottom: -12px;
-  
+
+.logo-img:hover {
+  transform: scale(1.1); /* Hiệu ứng phóng to nhẹ khi hover */
+}
+
+.logo-container a {
+  display: block;
+  text-align: center;
 }

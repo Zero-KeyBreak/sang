@@ -69,3 +69,41 @@
 .menu button:hover {
   background-color: #FCCB08;
 }
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #0f0431;
+  color: white;
+  height: 64px;
+}
+
+.title1 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.sign-out {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.sign-out:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.username {
+  font-size: 16px;
+  color: white;
+}
+
+.dropdown-icon {
+  font-size: 14px;
+  color: white;
+}
